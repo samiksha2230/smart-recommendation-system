@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        to right,
+        #141e30,
+        #243b55
+    );
+    color:white;
+    min-height:100vh;
+}
+
+/* Navbar */
+
+.navbar{
+    text-align:center;
+    padding:30px 20px;
+}
+
+.navbar h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.navbar p{
+    color:#cfd8dc;
+    font-size:18px;
+}
+
+/* Blog Container */
+
+.blog-container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    padding-bottom:50px;
+}
+
+/* Blog Card */
+
+.blog-card{
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+.blog-card:hover{
+    transform:translateY(-5px);
+}
+
+/* Category */
+
+.category{
+    display:inline-block;
+
+    background:#00bcd4;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+}
+
+/* Blog Title */
+
+.blog-title{
+    font-size:28px;
+
+    margin-bottom:15px;
+
+    font-weight:bold;
+}
+
+/* Blog Content */
+
+.blog-content{
+    line-height:1.7;
+
+    color:#e0e0e0;
+
+    margin-bottom:20px;
+}
+
+/* Action Buttons */
+
+.actions{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+button{
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    font-size:15px;
+}
+
+button:hover{
+    opacity:0.85;
+
+    transform:scale(1.05);
+}
+
+/* Individual Buttons */
+
+.like-btn{
+    background:#4caf50;
+    color:white;
+}
+
+.save-btn{
+    background:#ff9800;
+    color:white;
+}
+
+.read-btn{
+    background:#2196f3;
+    color:white;
+}
+
+.recommend-btn{
+    background:#9c27b0;
+    color:white;
+}
+
+/* Recommendation Section */
+
+#recommendation-section{
+    margin-top:40px;
+}
+
+/* Footer */
+
+.footer{
+    text-align:center;
+
+    padding:30px;
+
+    color:#cfd8dc;
+
+    font-size:14px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#1e293b;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00bcd4;
+    border-radius:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .blog-title{
+        font-size:22px;
+    }
+
+    .navbar h1{
+        font-size:30px;
+    }
+
+    .actions{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+}
+/* Search Box */
+
+.search-box{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+}
+
+.search-box input{
+
+    padding:12px;
+
+    width:300px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+}
+
+.search-box button{
+
+    background:#00bcd4;
+
+    color:white;
+}
+.logout-btn{
+
+    margin-top:20px;
+
+    background:#f44336;
+
+    color:white;
+}

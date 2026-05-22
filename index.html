@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart AI Feed</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            height:100vh;
+
+            background:
+            linear-gradient(
+                135deg,
+                #0f172a,
+                #1e293b,
+                #2563eb
+            );
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            color:white;
+        }
+
+        .container{
+
+            text-align:center;
+
+            width:90%;
+            max-width:700px;
+
+            padding:60px;
+
+            border-radius:25px;
+
+            background:rgba(255,255,255,0.08);
+
+            backdrop-filter:blur(20px);
+
+            border:1px solid rgba(255,255,255,0.1);
+
+            box-shadow:
+            0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:22px;
+            line-height:1.6;
+            color:#dbeafe;
+            margin-bottom:40px;
+        }
+
+        .buttons{
+
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+
+            padding:15px 35px;
+
+            border:none;
+
+            border-radius:12px;
+
+            font-size:18px;
+
+            font-weight:bold;
+
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .login-btn{
+            background:#3b82f6;
+            color:white;
+        }
+
+        .signup-btn{
+            background:#10b981;
+            color:white;
+        }
+
+        .btn:hover{
+            transform:translateY(-4px);
+            opacity:0.9;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Smart AI Feed</h1>
+
+    <p>
+        Personalized AI-powered recommendation
+        platform for blogs, articles, and smart
+        content discovery.
+    </p>
+
+    <div class="buttons">
+
+        <button class="btn login-btn"
+        onclick="window.location.href='login.html'">
+
+            Login
+
+        </button>
+
+        <button class="btn signup-btn"
+        onclick="window.location.href='signup.html'">
+
+            Signup
+
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
